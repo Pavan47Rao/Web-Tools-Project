@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">kalyan@47RAO</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/PreciousPaws</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.jdbc.batch_size">4</property>
+        <mapping class="com.preciouspaws.pojo.User"/>
+        <mapping class="com.preciouspaws.pojo.Doctor"/>
+        <mapping class="com.preciouspaws.pojo.PetOwner"/>
+        <mapping class="com.preciouspaws.pojo.VeterinaryOrgUser"/>
+        <mapping class="com.preciouspaws.pojo.AvailableSchedule"/>
+        <mapping class="com.preciouspaws.pojo.ServiceCatalogMapping"/>
+        <mapping class="com.preciouspaws.pojo.Pet"/>
+        <mapping class="com.preciouspaws.pojo.Appointment"/>
+        <mapping class="com.preciouspaws.pojo.ServiceAppointment"/>
+        <mapping class="com.preciouspaws.pojo.DoctorAppointment"/>
+        <mapping class="com.preciouspaws.pojo.Medication"/>
+    </session-factory>
+</hibernate-configuration>

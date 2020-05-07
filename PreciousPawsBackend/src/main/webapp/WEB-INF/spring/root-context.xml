@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<bean name="userdao" class="com.preciouspaws.dao.UserDAO"></bean>
+	<bean name="available_schedules_dao" class="com.preciouspaws.dao.ScheduleDAO"></bean>
+	<bean name="service_catalog_dao" class="com.preciouspaws.dao.ServiceCatalogDAO"></bean>	
+	<bean name="pet_dao" class="com.preciouspaws.dao.PetDAO"></bean>	
+	<bean name="appointment_dao" class="com.preciouspaws.dao.AppointmentDAO"></bean>
+	<bean name="validator" class="com.preciouspaws.validator.UserValidator"></bean>		
+</beans>

@@ -1,0 +1,17 @@
+.schedules {
+    width: 400px;
+    margin-top: 30px;
+    margin-left: 2%;
+}
+
+.welcomeMessage {
+    color: lightseagreen;
+}
+
+.medication {
+    margin: 2%;
+}
+
+.new-service {
+    margin: 2%
+}
